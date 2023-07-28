@@ -4,11 +4,11 @@ import java.math.BigDecimal;
 
 import br.com.ideao.converter.enums.Coin;
 
-public class CoinConverterEuro  extends CoinConverter{
+public class CoinConverterEuro extends CoinConverter{
 
     @Override
     public BigDecimal convertToCoin(Coin coin, BigDecimal valueInReal) {
-       coin = Coin.EURO;
+        coin = Coin.EURO;
         return super.convertToCoin(coin, valueInReal);
     }
 

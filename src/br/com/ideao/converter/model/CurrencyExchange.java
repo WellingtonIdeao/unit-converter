@@ -17,11 +17,11 @@ public class CurrencyExchange implements Operable {
     private static final String LIBRA_ESTERLINA_TO_REAL = "De Libra Esterlina para Real";
     private static final String PESO_ARGENTINO_TO_REAL = "De Peso Argentino para Real";
     private static final String PESO_CHILENO_TO_REAL = "De Peso Chileno para Real";
-    private CoinConverterDolar coinConverterToDolar = new CoinConverterDolar();
-    private CoinConverterEuro coinConverterToEuro = new CoinConverterEuro();
-    private CoinConverterLibraEsterlina coinConverterToLibraEsterlina = new CoinConverterLibraEsterlina();
-    private CoinConverterPesoArgentino coinConverterToPesoArgentino = new CoinConverterPesoArgentino();
-    private CoinConverterPesoChileno coinConverterToPesoChileno = new CoinConverterPesoChileno();
+    private CoinConverterDolar coinConverterDolar = new CoinConverterDolar();
+    private CoinConverterEuro coinConverterEuro = new CoinConverterEuro();
+    private CoinConverterLibraEsterlina coinConverterLibraEsterlina = new CoinConverterLibraEsterlina();
+    private CoinConverterPesoArgentino coinConverterPesoArgentino = new CoinConverterPesoArgentino();
+    private CoinConverterPesoChileno coinConverterPesoChileno = new CoinConverterPesoChileno();
 
     private Coin coin;
     
@@ -29,34 +29,34 @@ public class CurrencyExchange implements Operable {
     public BigDecimal makeOperation(String operation, double initialValue) throws Exception {
         switch (operation) {
             case REAL_TO_DOLAR -> {
-                return coinConverterToDolar.convertToCoin(coin, BigDecimal.valueOf(initialValue));
+                return coinConverterDolar.convertToCoin(coin, BigDecimal.valueOf(initialValue));
             }
             case REAL_TO_EURO -> {
-                return coinConverterToEuro.convertToCoin(coin, BigDecimal.valueOf(initialValue));
+                return coinConverterEuro.convertToCoin(coin, BigDecimal.valueOf(initialValue));
             }
             case REAL_TO_LIBRA_ESTERLINA -> {
-                return coinConverterToLibraEsterlina.convertToCoin(coin, BigDecimal.valueOf(initialValue));
+                return coinConverterLibraEsterlina.convertToCoin(coin, BigDecimal.valueOf(initialValue));
             }
             case REAL_TO_PESO_ARGENTINO -> {
-                return coinConverterToPesoArgentino.convertToCoin(coin, BigDecimal.valueOf(initialValue));
+                return coinConverterPesoArgentino.convertToCoin(coin, BigDecimal.valueOf(initialValue));
             }
             case REAL_TO_PESO_CHILENO -> {
-                return coinConverterToPesoChileno.convertToCoin(coin, BigDecimal.valueOf(initialValue));
+                return coinConverterPesoChileno.convertToCoin(coin, BigDecimal.valueOf(initialValue));
             }
             case DOLAR_TO_REAL -> {
-                return coinConverterToDolar.convertToReal(coin, BigDecimal.valueOf(initialValue));
+                return coinConverterDolar.convertToReal(coin, BigDecimal.valueOf(initialValue));
             }
             case EURO_TO_REAL -> {
-                return coinConverterToEuro.convertToReal(coin, BigDecimal.valueOf(initialValue));
+                return coinConverterEuro.convertToReal(coin, BigDecimal.valueOf(initialValue));
             }
             case LIBRA_ESTERLINA_TO_REAL -> {
-                return coinConverterToLibraEsterlina.convertToReal(coin, BigDecimal.valueOf(initialValue));
+                return coinConverterLibraEsterlina.convertToReal(coin, BigDecimal.valueOf(initialValue));
             }
             case PESO_ARGENTINO_TO_REAL -> {
-                return  coinConverterToPesoArgentino.convertToReal(coin, BigDecimal.valueOf(initialValue));
+                return  coinConverterPesoArgentino.convertToReal(coin, BigDecimal.valueOf(initialValue));
             }
             case PESO_CHILENO_TO_REAL -> {
-                return coinConverterToPesoChileno.convertToReal(coin, BigDecimal.valueOf(initialValue));
+                return coinConverterPesoChileno.convertToReal(coin, BigDecimal.valueOf(initialValue));
             }
             default -> throw new Exception("ESCOLHA INVÁLIDA");
         }

@@ -34,49 +34,71 @@ public class Converter extends JFrame {
             if(operation != null) {
                 Operable operationConvertion = null;  
                 String op = null;
+                TypeConvertion typeConvertion = null;
+                List<TypeConvertion> typeConvertions = new ArrayList<>();
+
                 switch(operations.get(operation)) {
                     case 1:
                         operationConvertion = new CurrencyExchange();
-                        List<String> typeConvertions = new ArrayList<>();
-                        typeConvertions.add(TypeConvertion.REAL_PARA_DOLAR.getDescription());
-                        typeConvertions.add(TypeConvertion.REAL_PARA_EURO.getDescription());
-                        typeConvertions.add(TypeConvertion.REAL_PARA_LIBRA_ESTERLINA.getDescription());
-                        typeConvertions.add(TypeConvertion.REAL_PARA_PESO_ARGENTINO.getDescription());
-                        typeConvertions.add(TypeConvertion.REAL_PARA_PESO_CHILENO.getDescription());
-                        typeConvertions.add(TypeConvertion.DOLAR_PARA_REAL.getDescription());
-                        typeConvertions.add(TypeConvertion.EURO_PARA_REAL.getDescription());
-                        typeConvertions.add(TypeConvertion.LIBRA_ESTERLINA_PARA_REAL.getDescription());
-                        typeConvertions.add(TypeConvertion.PESO_ARGENTINO_PARA_REAL.getDescription());
-                        typeConvertions.add(TypeConvertion.PESO_CHILENO_PARA_REAL.getDescription());
+                       
+                        typeConvertions.add(TypeConvertion.REAL_PARA_DOLAR);
+                        typeConvertions.add(TypeConvertion.REAL_PARA_EURO);
+                        typeConvertions.add(TypeConvertion.REAL_PARA_LIBRA_ESTERLINA);
+                        typeConvertions.add(TypeConvertion.REAL_PARA_PESO_ARGENTINO);
+                        typeConvertions.add(TypeConvertion.REAL_PARA_PESO_CHILENO);
+                        typeConvertions.add(TypeConvertion.DOLAR_PARA_REAL);
+                        typeConvertions.add(TypeConvertion.EURO_PARA_REAL);
+                        typeConvertions.add(TypeConvertion.LIBRA_ESTERLINA_PARA_REAL);
+                        typeConvertions.add(TypeConvertion.PESO_ARGENTINO_PARA_REAL);
+                        typeConvertions.add(TypeConvertion.PESO_CHILENO_PARA_REAL);
 
-
-                        op = (String)JOptionPane.showInputDialog(null, "Escolha uma moeda",
+                        typeConvertion = (TypeConvertion)JOptionPane.showInputDialog(null, "Escolha uma moeda",
                             "Moedas", JOptionPane.QUESTION_MESSAGE, null,
-                            typeConvertions.toArray(), "Escolha");     
+                            typeConvertions.toArray(), "Escolha");
+                        if(typeConvertion != null) {
+                            op = typeConvertion.toString();
+                        }        
                         break;
                     case 2:
-                        JOptionPane.showMessageDialog(this,"Conversor de temperatura");
+                        operationConvertion = new TemperatureExchange();
+                        typeConvertions.add(TypeConvertion.CELSIUS_PARA_FAHRENHEIT);
+                        typeConvertions.add(TypeConvertion.CELSIUS_PARA_KELVIN);
+                        typeConvertions.add(TypeConvertion.FAHRENHEIT_PARA_CELSIUS);
+                        typeConvertions.add(TypeConvertion.FAHRENHEIT_PARA_KELVIN);
+                        typeConvertions.add(TypeConvertion.KELVIN_PARA_CELSIUS);
+                        typeConvertions.add(TypeConvertion.KELVIN_PARA_FAHRENHEIT);
+
+                        typeConvertion = (TypeConvertion)JOptionPane.showInputDialog(null, "Escolha a escala de temperatura",
+                                "Moedas", JOptionPane.QUESTION_MESSAGE, null, typeConvertions.toArray(),
+                                "Escolha");
+                        if(typeConvertion != null){
+                            op = typeConvertion.toString();
+                        }        
                         break;
                 }
-
-                String input = JOptionPane.showInputDialog("Insira um valor");
-                Validator  validator = new Validator();
-                
-                if(!validator.check(input)) {    
-                    JOptionPane.showMessageDialog(this, "Valor Inválido");
-                }else {
-                    double initialValue = validator.parseDouble(input);
-                    BigDecimal convertedValue = operationConvertion.makeOperation(op, initialValue);
-                    JOptionPane.showMessageDialog(this, convertedValue);
+               
+                if(op != null){
+                    String input = JOptionPane.showInputDialog("Insira um valor");
+                    Validator  validator = new Validator();
+                    if(input!= null){
+                        if(!validator.check(input)) {    
+                            JOptionPane.showMessageDialog(this, "Valor Inválido");
+                        }else {
+                            double initialValue = validator.parseDouble(input);
+                            BigDecimal convertedValue = operationConvertion.makeOperation(op, initialValue);
+                            showConvertedValue(convertedValue, typeConvertion.getReprValueConverted());
+                            
+                        }
+                    }    
                 }
-
-            }
-            toContinue = toRepeat();    
-            
+            }    
+            toContinue = toRepeat();     
         }
         finishedConverter();   
     }
-
+    private void showConvertedValue(BigDecimal convertedValue, String reprValueConverted){
+        JOptionPane.showMessageDialog(this, convertedValue + " " + reprValueConverted);
+    }
     private void finishedConverter() {
         JOptionPane.showMessageDialog(this, "Programa finalizado");
         System.exit(0);
