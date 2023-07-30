@@ -28,7 +28,7 @@ public class Converter extends JFrame {
         boolean toContinue = true;
         
         while(toContinue) {
-            String operation = (String)JOptionPane.showInputDialog(this, "Escolha uma operacao", "Converter",
+            String operation = (String)JOptionPane.showInputDialog(this, "Escolha uma opção", "Converter",
             JOptionPane.QUESTION_MESSAGE, null, operations.keySet().toArray() ,"Escolha");
             
             if(operation != null) {
@@ -52,7 +52,8 @@ public class Converter extends JFrame {
                         typeConvertions.add(TypeConvertion.PESO_ARGENTINO_PARA_REAL);
                         typeConvertions.add(TypeConvertion.PESO_CHILENO_PARA_REAL);
 
-                        typeConvertion = (TypeConvertion)JOptionPane.showInputDialog(null, "Escolha uma moeda",
+                        typeConvertion = (TypeConvertion)JOptionPane.showInputDialog(null,
+                            "Escolha uma moeda para a qual você deseja trocar seu dinheiro",
                             "Moedas", JOptionPane.QUESTION_MESSAGE, null,
                             typeConvertions.toArray(), "Escolha");
                         if(typeConvertion != null) {
@@ -68,7 +69,8 @@ public class Converter extends JFrame {
                         typeConvertions.add(TypeConvertion.KELVIN_PARA_CELSIUS);
                         typeConvertions.add(TypeConvertion.KELVIN_PARA_FAHRENHEIT);
 
-                        typeConvertion = (TypeConvertion)JOptionPane.showInputDialog(null, "Escolha a escala de temperatura",
+                        typeConvertion = (TypeConvertion)JOptionPane.showInputDialog(null,
+                                "Escolha a escala de temperatura",
                                 "Moedas", JOptionPane.QUESTION_MESSAGE, null, typeConvertions.toArray(),
                                 "Escolha");
                         if(typeConvertion != null){
@@ -91,21 +93,34 @@ public class Converter extends JFrame {
                         }
                     }    
                 }
-            }    
-            toContinue = toRepeat();     
+            }
+            toContinue = toRepeat();
         }
-        finishedConverter();   
+           
     }
+    
     private void showConvertedValue(BigDecimal convertedValue, String reprValueConverted){
-        JOptionPane.showMessageDialog(this, convertedValue + " " + reprValueConverted);
+        JOptionPane.showMessageDialog(this, "O valor da conversão é "+convertedValue + " " + reprValueConverted);
     }
-    private void finishedConverter() {
-        JOptionPane.showMessageDialog(this, "Programa finalizado");
+
+    private void finishedConverter(String msg) {
+        JOptionPane.showMessageDialog(this, msg);
         System.exit(0);
     }
 
     private boolean toRepeat() {
-        int response = JOptionPane.showConfirmDialog(this, "Deseja continuar?");
-        return response ==0; 
+        boolean b = false;
+
+        int optionselect = JOptionPane.showConfirmDialog(this, "Deseja continuar?"); 
+        if(optionselect == 0){
+            b = true;
+        }else if(optionselect == 1){
+            b = false;
+            finishedConverter("Programa finalizado");
+        }else {
+            b = false;
+            finishedConverter("Programa concluído");
+        }    
+        return b; 
     }
 }
