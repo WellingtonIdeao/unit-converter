@@ -1,4 +1,4 @@
-package br.com.ideao.converter.main;
+package br.com.ideao.converter;
 
 import javax.swing.SwingUtilities;
 
