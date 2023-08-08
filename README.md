@@ -43,6 +43,29 @@ ONE é um programa de educação e empregabilidade com objetivo social de capaci
 
 ## ⚙ Funcionalidades
 
+- [x] Os usuários podem converter moedas:
+  - [x] de Real para Dólar
+  - [x] de Real para Euro
+  - [x] de Real para Libras Esterlinas
+  - [x] de Real para Peso Argentino
+  - [x] de Real para Peso Chileno
+  - [x] de Dólar para Real
+  - [x] de Euro para Real
+  - [x] de Libras Esterlinas para Real
+  - [x] de Peso Argentino para Real
+  - [x] de Peso Chileno para Real
+
+- [x] Os usúarios podem converter temperaturas:  
+  - [x] de Celsius para Fahrenheit
+  - [x] de Celsius para Kelvin
+  - [x] de Fahrenheit para Celsius
+  - [x] de Fahrenheit para Kelvin
+  - [x] de Kelvin para Celsius
+  - [x] de Kelvin para Fahrenheit
+  
+  
+  
+
 ---
 
 ## 🚀 Como executar o projeto
