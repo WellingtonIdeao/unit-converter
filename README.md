@@ -23,6 +23,8 @@ Tabela de conteúdos
 
    * [Sobre o projeto](#-sobre-o-projeto)
    * [Funcionalidades](#-funcionalidades)
+   * [Layout](#-layout)
+     * [Desktop](#desktop) 
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
    * [Tecnologias](#-tecnologias)
@@ -63,8 +65,11 @@ ONE é um programa de educação e empregabilidade com objetivo social de capaci
   - [x] de Kelvin para Celsius
   - [x] de Kelvin para Fahrenheit
   
-  
-  
+---
+
+## 🎨 Layout
+
+### Desktop
 
 ---
 
