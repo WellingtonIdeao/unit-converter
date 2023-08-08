@@ -28,7 +28,7 @@ public class Converter extends JFrame {
         boolean toContinue = true;
         
         while(toContinue) {
-            String operation = (String)JOptionPane.showInputDialog(this, "Escolha uma opção", "Converter",
+            String operation = (String)JOptionPane.showInputDialog(this, "Escolha uma opção", title,
             JOptionPane.QUESTION_MESSAGE, null, operations.keySet().toArray() ,"Escolha");
             
             if(operation != null) {
@@ -71,7 +71,7 @@ public class Converter extends JFrame {
 
                         typeConvertion = (TypeConvertion)JOptionPane.showInputDialog(null,
                                 "Escolha a escala de temperatura",
-                                "Moedas", JOptionPane.QUESTION_MESSAGE, null, typeConvertions.toArray(),
+                                "Temperaturas", JOptionPane.QUESTION_MESSAGE, null, typeConvertions.toArray(),
                                 "Escolha");
                         if(typeConvertion != null){
                             op = typeConvertion.toString();

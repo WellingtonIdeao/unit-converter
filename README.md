@@ -70,6 +70,14 @@ ONE é um programa de educação e empregabilidade com objetivo social de capaci
 ## 🎨 Layout
 
 ### Desktop
+<p align="center">
+  <img alt="Menu principal" title="#Menu principal" src="./assets/menu-principal.png" width="200px">
+  <img alt="Opções de conversões" title="#Opções de conversões" src="./assets/opcoes-de-conversoes.png" width="200px">
+</p>
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/conversor-de-moedas.png" width="300px">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/conversor-de-temperatura.png" width="300px">
+</p>
 
 ---
 
