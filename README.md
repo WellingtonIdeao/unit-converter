@@ -12,8 +12,24 @@
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/wellingtonideao/unit-converter">
   </a>
   <img alt="License" src="https://img.shields.io/github/license/wellingtonideao/unit-converter">  
-</p>  
+</p>
 
+<h4 align="center">
+	🚧 Concluído 🚀 🚧
+</h4>
+
+Tabela de conteúdos
+=====================
+
+   * [Sobre o projeto](#-sobre-o-projeto)
+   * [Funcionalidades](#-funcionalidades)
+   * [Como executar o projeto](#-como-executar-o-projeto)
+     * [Pré-requisitos](#pré-requisitos)
+   * [Tecnologias](#-tecnologias)
+   * [Contribuidores](#-contribuidores)
+   * [Como contribuir no projeto](#-como-contribuir-no-projeto)
+   * [Autor](#-autor)
+   * [Licença](#user-content--licença)
 
 ## 💻 Sobre o projeto
 
@@ -23,8 +39,34 @@ Projeto desenvolvido para o Challenge Backend da Alura Oracle Next Education - O
 
 ONE é um programa de educação e empregabilidade com objetivo social de capacitar pessoas em tecnologia e conectá-las com o mercado de trabalho por meio de empresas parceiras.
 
+---
 
+## ⚙️ Funcionalidades
 
-<h4 align="center">
-	🚧   Concluído 🚀 🚧
-</h4>
+---
+
+## 🚀 Como executar o projeto
+
+### Pré-requisitos
+
+---
+
+## 🛠 Tecnologias
+
+---
+
+## 👨‍💻 Contribuidores
+
+---
+
+## 💪 Como contribuir no projeto
+
+---
+
+## 🦸 Autor
+
+---
+
+## 📝 Licença
+
+---
