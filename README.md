@@ -29,7 +29,7 @@ Tabela de conteúdos
    * [Contribuidores](#-contribuidores)
    * [Como contribuir no projeto](#-como-contribuir-no-projeto)
    * [Autor](#-autor)
-   * [Licença](#user-content--licença)
+   * [Licença](#-licença)
 
 ## 💻 Sobre o projeto
 
@@ -41,11 +41,13 @@ ONE é um programa de educação e empregabilidade com objetivo social de capaci
 
 ---
 
-## ⚙️ Funcionalidades
+## ⚙ Funcionalidades
 
 ---
 
 ## 🚀 Como executar o projeto
+
+---
 
 ### Pré-requisitos
 
