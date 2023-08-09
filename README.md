@@ -30,8 +30,6 @@ Tabela de conteúdos
      * [Compilando e executando o aplicação localmente](#user-content--compilando-e-executando-o-aplicação-localmente)
      * [Executando aplicação via arquivo jar](#user-content--executando-aplicação-via-arquivo-jar)
    * [Tecnologias](#-tecnologias)
-   * [Contribuidores](#-contribuidores)
-   * [Como contribuir no projeto](#-como-contribuir-no-projeto)
    * [Autor](#-autor)
    * [Licença](#-licença)
 
