@@ -121,9 +121,11 @@ $ java -cp unit-converter-1.0-SNAPSHOT.jar br.com.ideao.converter.App
 
 As seguintes ferramentas e tecnologias foram usadas na construção do projeto:
 * [Git](https://git-scm.com)
-* [Java Development Kit 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
-* [Maven](https://maven.apache.org/download.cgi)
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 * [Java Swing](https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/package-summary.html)
+* [Maven](https://maven.apache.org/download.cgi)
+* [Paradigma de programação orientada a objetos](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_orientada_a_objetos)
 
 ---
 
