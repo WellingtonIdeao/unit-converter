@@ -28,7 +28,7 @@ Tabela de conteúdos
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
      * [Compilando e executando o aplicação localmente](#user-content--compilando-e-executando-o-aplicação-localmente)
-     * [Executando aplicação via arquivo .jar](#user-content--executando-aplicação-via-arquivo-.jar)
+     * [Executando aplicação via arquivo jar](#user-content--executando-aplicação-via-arquivo-jar)
    * [Tecnologias](#-tecnologias)
    * [Contribuidores](#-contribuidores)
    * [Como contribuir no projeto](#-como-contribuir-no-projeto)
@@ -109,7 +109,7 @@ $ mvn install
 $ java -cp target/unit-converter-1.0-SNAPSHOT.jar br.com.ideao.converter.App
 ```
 
-#### 🧭 Executando aplicação via arquivo .jar
+#### 🧭 Executando aplicação via arquivo jar
 
 ```bash
 # Acesse a pasta onde está localizado o arquivo .jar
