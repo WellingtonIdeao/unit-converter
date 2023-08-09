@@ -8,7 +8,7 @@
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/wellingtonideao/unit-converter">
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/wellingtonideao/unit-converter">
-  <a href="https://github.com/tgmarinho/README-ecoleta/commits/master">
+  <a href="https://github.com/WellingtonIdeao/unit-converter/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/wellingtonideao/unit-converter">
   </a>
   <img alt="License" src="https://img.shields.io/github/license/wellingtonideao/unit-converter">  
@@ -91,7 +91,6 @@ Você vai precisa instalar as seguintes ferramentas:
 * [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 * [Maven](https://maven.apache.org/download.cgi)
 
-* [Um bom editor de texto como VsCode](https://code.visualstudio.com/)
 
 #### 🎲 Compilando e executando o aplicação localmente
 
@@ -122,9 +121,9 @@ $ java -cp unit-converter-1.0-SNAPSHOT.jar br.com.ideao.converter.App
 
 ## 🛠 Tecnologias
 
-As seguintes ferramentas foram usadas na construção do projeto:
+As seguintes ferramentas e tecnologias foram usadas na construção do projeto:
 * [Git](https://git-scm.com)
-* [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+* [Java Development Kit 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 * [Maven](https://maven.apache.org/download.cgi)
 * [Java Swing](https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/package-summary.html)
 
