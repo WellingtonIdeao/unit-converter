@@ -27,6 +27,8 @@ Tabela de conteúdos
      * [Desktop](#desktop) 
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
+     * [Compilando e executando o aplicação localmente](#user-content--compilando-e-executando-o-aplicação-localmente)
+     * [Executando aplicação via arquivo .jar](#user-content--executando-aplicação-via-arquivo-.jar)
    * [Tecnologias](#-tecnologias)
    * [Contribuidores](#-contribuidores)
    * [Como contribuir no projeto](#-como-contribuir-no-projeto)
@@ -83,10 +85,39 @@ ONE é um programa de educação e empregabilidade com objetivo social de capaci
 
 ## 🚀 Como executar o projeto
 
----
-
 ### Pré-requisitos
+Você vai precisa instalar as seguintes ferramentas:
+* [Git](https://git-scm.com)
+* [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+* [Maven](https://maven.apache.org/download.cgi)
 
+* [Um bom editor de texto como VsCode](https://code.visualstudio.com/)
+
+#### 🎲 Compilando e executando o aplicação localmente
+
+ ```bash
+# Clone este repositório
+$ git clone https://github.com/WellingtonIdeao/unit-converter.git
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd unit-converter
+
+# Instale as dependências e compile os arquivos
+$ mvn install
+
+# Execute os arquivos compilados(.jar) na JVM (Java Virtual Machine)
+$ java -cp target/unit-converter-1.0-SNAPSHOT.jar br.com.ideao.converter.App
+```
+
+#### 🧭 Executando aplicação via arquivo .jar
+
+```bash
+# Acesse a pasta onde está localizado o arquivo .jar
+$ cd pasta
+
+# Execute o arquivo .jar na JVM (Java Virtual Machine)
+$ $ java -cp unit-converter-1.0-SNAPSHOT.jar br.com.ideao.converter.App
+```
 ---
 
 ## 🛠 Tecnologias
