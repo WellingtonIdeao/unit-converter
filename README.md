@@ -122,20 +122,25 @@ $ $ java -cp unit-converter-1.0-SNAPSHOT.jar br.com.ideao.converter.App
 
 ## 🛠 Tecnologias
 
----
-
-## 👨‍💻 Contribuidores
-
----
-
-## 💪 Como contribuir no projeto
+As seguintes ferramentas foram usadas na construção do projeto:
+* [Git](https://git-scm.com)
+* [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+* [Maven](https://maven.apache.org/download.cgi)
+* [Java Swing](https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/package-summary.html)
 
 ---
 
 ## 🦸 Autor
 
+<a><sub><b>Wellington Ideão</b></sub></a> <a href="https://github.com/WellingtonIdeao" title="Github">🚀</a>
+
+Feito por Wellington Ideão 👋🏽 Entre em contato!
+
+[![Linkedin Badge](https://img.shields.io/badge/-Wellington-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/wellington-ideao/)](https://www.linkedin.com/in/wellington-ideao/)
+[![Gmail Badge](https://img.shields.io/badge/-wellington.ideao@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:wellington.ideao@gmail.com)](mailto:wellington.ideao@gmail.com)
+
 ---
 
 ## 📝 Licença
+Este projeto esta sobe a licença [GPL-3.0](./LICENSE).
 
----
