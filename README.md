@@ -112,11 +112,11 @@ $ java -cp target/unit-converter-1.0-SNAPSHOT.jar br.com.ideao.converter.App
 #### 🧭 Executando aplicação via arquivo jar
 
 ```bash
-# Acesse a pasta onde está localizado o arquivo .jar
+# Acesse a pasta onde está localizado o arquivo .jar no terminal/cmd
 $ cd pasta
 
 # Execute o arquivo .jar na JVM (Java Virtual Machine)
-$ $ java -cp unit-converter-1.0-SNAPSHOT.jar br.com.ideao.converter.App
+$ java -cp unit-converter-1.0-SNAPSHOT.jar br.com.ideao.converter.App
 ```
 ---
 
